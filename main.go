@@ -20,8 +20,8 @@ func main() {
 
 	// Define the data to be used in the conditions
 	data1 := map[string]interface{}{
-		"Sensor3Temp": 999,
-		//"Sensor2Temp": 999,
+		"Sensor1Temp": 9,
+		"Sensor2Temp": 9,
 	}
 
 	// data2 := map[string]interface{}{
