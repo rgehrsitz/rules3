@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "all": [
+      {
+        "identifier": "sensor2temp",
+        "operator": ">=",
+        "value": 100
+      },
+      {
+        "identifier": "sensor2pressure",
+        "operator": ">=",
+        "value": 50
+      }
+    ]
+  },
+  "event": {
+    "type": "fault",
+    "payload": {
+      "inverter1": "faulted",
+      "cause": "Bad sensor 2"
+    }
+  }
+}

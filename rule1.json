@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "any": [
+      {
+        "identifier": "Sensor1Temp",
+        "operator": ">=",
+        "value": 100
+      },
+      {
+        "identifier": "Sensor2Temp",
+        "operator": "<=",
+        "value": 0
+      }
+    ]
+  },
+  "event": {
+    "type": "fault",
+    "payload": {
+      "inverter1": "faulted",
+      "cause": "Temp out of bounds"
+    }
+  }
+}
