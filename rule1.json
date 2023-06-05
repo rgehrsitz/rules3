@@ -7,7 +7,7 @@
         "value": 100
       },
       {
-        "identifier": "Sensor2Temp",
+        "identifier": "Sensor1Temp",
         "operator": "<=",
         "value": 0
       }

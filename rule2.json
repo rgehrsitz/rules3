@@ -2,12 +2,12 @@
   "condition": {
     "all": [
       {
-        "identifier": "sensor2temp",
+        "identifier": "Sensor2Temp",
         "operator": ">=",
         "value": 100
       },
       {
-        "identifier": "sensor2pressure",
+        "identifier": "Sensor2Pressure",
         "operator": ">=",
         "value": 50
       }
