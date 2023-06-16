@@ -9,10 +9,10 @@ import (
 
 func main() {
 
-	// jsonRule1, err := os.ReadFile("rule1.json")
-	// if err != nil {
-	// 	panic(err)
-	// }
+	jsonRule1, err := os.ReadFile("rule1.json")
+	if err != nil {
+		panic(err)
+	}
 	jsonRule2, err := os.ReadFile("rule2.json")
 	if err != nil {
 		panic(err)
@@ -20,12 +20,13 @@ func main() {
 
 	// Define the data to be used in the conditions
 	data1 := map[string]interface{}{
-		"Sensor1Temp": 9,
+		"Sensor1Temp": -9,
 		"Sensor2Temp": 999,
 		"Sensor3Temp": 100,
 	}
 
 	data2 := map[string]interface{}{
+		"Sensor1Temp":     9,
 		"Sensor2Temp":     177,
 		"Sensor2Pressure": 60,
 	}
@@ -34,7 +35,7 @@ func main() {
 		AllowUndefinedVars: true,
 	})
 
-	// engine.AddRule(string(jsonRule1))
+	engine.AddRule(string(jsonRule1))
 	engine.AddRule(string(jsonRule2))
 	// engine.AddRules(string(jsonRule1), string(jsonRule2))
 
